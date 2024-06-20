@@ -8,3 +8,4 @@
     "wrap-ansi": "7.0.0",
     "string-width": "4.1.0"
   },
+  去解决 react build 的问题 和 跑 prod 文件的问题 - 详见 Javascript/配置环境(webpack_babel_yarn_ts_jest)/yarn_npm/package.json有用的模块.txt
