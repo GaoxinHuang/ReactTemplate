@@ -10,3 +10,8 @@
         "lint:check": "eslint src",
         "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
         "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\""
+		
+四.	加了 husky
+1.	 "prepare": "husky init" 指令
+2.	跑 yarn prepare
+3.	编辑 pre-commit

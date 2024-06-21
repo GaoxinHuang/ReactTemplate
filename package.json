@@ -11,7 +11,7 @@
         "lint:check": "eslint src",
         "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
         "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
-        "prepare": "husky"
+        "prepare": "husky init"
     },
     "dependencies": {
         "camelcase": "^6.2.1",
