@@ -10,7 +10,8 @@
         "lint": "eslint src --fix",
         "lint:check": "eslint src",
         "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
-        "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\""
+        "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
+        "prepare": "husky install"
     },
     "dependencies": {
         "camelcase": "^6.2.1",
@@ -88,7 +89,8 @@
     },
     "lint-staged": {
       "src/**/*.{js,ts,tsx}": [
-        "eslint src"
+        "eslint --fix",
+        "prettier --write"
       ]
     },
     "resolutions": {
