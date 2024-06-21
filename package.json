@@ -11,6 +11,7 @@
     "lint:check": "eslint src",
     "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
     "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
+    "prehusky": "husky init",
     "prepare": "husky"
   },
   "dependencies": {
@@ -86,12 +87,6 @@
     "hooks": {
       "pre-commit": "yarn run lint"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   },
   "resolutions": {
     "strip-ansi": "6.0.0",
