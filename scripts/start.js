@@ -44,7 +44,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 
 if (process.env.HOST) {
     console.log(
-        chalk.cyan(`Attempting to bind to HOST environment variable: ${chalk.yellow(chalk.bold(process.env.HOST))}`),
+        chalk.cyan(`Attempting to bind to HOST environment variable: ${chalk.yellow(chalk.bold(process.env.HOST))}`)
     );
     console.log(`If this was unintentional, check that you haven't mistakenly set it in your shell.`);
     console.log(`Learn more here: ${chalk.yellow('https://cra.link/advanced-config')}`);
@@ -99,7 +99,7 @@ checkBrowsers(paths.appPath, isInteractive)
 
             if (env.raw.FAST_REFRESH && semver.lt(react.version, '16.10.0')) {
                 console.log(
-                    chalk.yellow(`Fast Refresh requires React 16.10 or higher. You are using React ${react.version}.`),
+                    chalk.yellow(`Fast Refresh requires React 16.10 or higher. You are using React ${react.version}.`)
                 );
             }
 
