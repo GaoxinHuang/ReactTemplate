@@ -10,10 +10,11 @@ In the project directory, you can run:
 
 ### `yarn build`
 
-### `serve -s build` 
+### `serve -s build`
+
 -s build: build is folder name
 Run it in the local
-Note: run "yarn prod" or "yarn run serve -s build" 
+Note: run "yarn prod" or "yarn run serve -s build"
 
 ### `yarn start`
 
