@@ -82,6 +82,16 @@
         "webpack-manifest-plugin": "^4.0.2",
         "workbox-webpack-plugin": "^6.4.1"
     },
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn run lint"
+      }
+    },
+    "lint-staged": {
+      "*.{js,ts,tsx}": [
+        "eslint --quiet"
+      ]
+    },
     "resolutions": {
         "strip-ansi": "6.0.0",
         "wrap-ansi": "7.0.0",
