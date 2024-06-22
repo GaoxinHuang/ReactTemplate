@@ -10,7 +10,8 @@
     "lint": "eslint src --fix",
     "lint:check": "eslint src",
     "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
-    "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\""
+    "format:check": "prettier --list-different \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
+    "postinstall": "husky"
   },
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
