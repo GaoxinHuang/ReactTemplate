@@ -6,7 +6,7 @@
         "build": "node scripts/build.js",
         "start": "node scripts/start.js",
         "test": "node scripts/test.js",
-        "prod": "serve -s build",
+        "prod": "yarn build && serve -s build",
         "lint": "eslint src --fix",
         "lint:check": "eslint src",
         "format": "prettier --list-different --write \"**/*.{ts,tsx,html,scss,css,js,json,md}\"",
@@ -14,6 +14,7 @@
         "prepare": "husky init"
     },
     "dependencies": {
+        "@babel/plugin-transform-private-property-in-object": "^7.24.7",
         "camelcase": "^6.2.1",
         "dotenv": "^10.0.0",
         "dotenv-expand": "^5.1.0",
@@ -28,7 +29,6 @@
     },
     "devDependencies": {
         "@babel/core": "^7.16.0",
-        "@babel/plugin-transform-private-property-in-object": "^7.24.7",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
         "@svgr/webpack": "^5.5.0",
         "@testing-library/jest-dom": "^5.14.1",
